@@ -1,0 +1,448 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body{
+    font-family: "Fredoka", sans-serif;
+    overflow-x: hidden;
+}
+
+/* header start */
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0;
+}
+header .top-header{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+header .logo-section{
+    width: max-content;
+}
+.logo-section .cookie-logo{
+    width: 50px;
+    position: absolute;
+    top: -30%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+header .oreo-id-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: max-content;
+    background-image: linear-gradient(58deg,rgba(5,174,255,1) 0%,rgba(230,13,104,1) 68%,rgba(240,103,7,1) 100%);
+}
+header .oreo-id-logo p{
+    margin: 0;
+}
+
+header .menu-btn{
+    font-size: 30px;
+    padding: 0;
+}
+header .menu-btn i{
+    cursor: pointer;
+}
+header nav{
+    display: flex;
+    justify-content: space-between;
+    gap: 2%;
+}
+header nav a{
+    color: black;
+    text-decoration: none;
+    font-size: 1rem;
+}
+header nav a span{
+    font-size: 1.5rem;
+    margin-right: 3px;
+}
+header .user-area{
+    width: max-content;
+    font-size: 1.5rem;
+}
+
+header .user-area span:not(:last-child){
+    margin-right: 5px;
+}
+header .bottom-header .nav-wrapper{
+    width: 90%;
+    overflow: scroll;
+    margin : auto;
+    scrollbar-width: none;
+    display: flex;
+    gap: 5px;
+}
+header .bottom-header .bottom-nav{
+    width: 60%;
+    min-width: 580px;
+    padding: 0 10px;
+    margin-top: 0;
+    padding-top: 10px;    
+}
+/* header ends */
+
+/* main section */
+main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+main .banner img {
+    width: 95%;
+} 
+
+
+main .product-1 > div{
+    text-align: center;
+}
+main .product-1 > div > img{
+    width: 70%;
+}
+main .product-1 > div > h3 {
+    margin-top: 15px;
+}
+
+main .feature-section .text-section .oreoid-logo {
+    width: 150px;
+}
+main .feature-section .oreoid-logo img {
+    width: 100%;
+}
+
+main .feature-section .img-section > div {
+    max-width: 400px;
+}
+main .feature-section .img-section img{
+    width: 100%;
+}
+main .feature-section .oreoid-btn{
+    gap: 5px;
+    background-image: linear-gradient(58deg,rgba(5,174,255,1) 0%,rgba(230,13,104,1) 68%,rgba(240,103,7,1) 100%);
+}
+main .feature-section .oreoid-btn img{
+    width: 25px;
+}
+main .feature-section .oreoid-btn p{
+    margin: 0;
+}
+
+
+main .twist-section{
+    width: 100vw;
+    max-width: 1300px;
+    height: 550px;
+    padding-top: 100px;
+    background-color: #0058C9;
+    color : white;
+    position: relative;
+}
+main .twist-section .head {
+    font-size: clamp(50px,8vw,75px);
+    text-align: center;
+}
+main .twist-section > div{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+main .twist-section img{
+    position: absolute;
+    width: 20%;
+    min-width: 100px;
+    max-width: 180px;
+}
+main .twist-section .top-right-cookie,.bottom-center-cookie{
+    width: 20%;
+    min-width: 80px;
+    max-width: 150px;
+}
+main .twist-section .top-left-cookie{
+    top: -88px;
+    left: 0;
+}
+main .twist-section .top-right-cookie{
+    top: -90px;
+    right: 2%;
+}
+main .twist-section .bottom-left-cookie{
+    bottom: -10px;
+    left: 5%;
+}
+main .twist-section .bottom-center-cookie{
+    left: 40%;
+    bottom: 0;
+    min-width: 80px;
+    max-width: 120px;
+}
+main .twist-section .bottom-right-cookie{
+    right: 4%;
+    bottom: 20px;
+}
+main .twist-section .center-cookie{
+    max-width: 350px;
+    min-width: 180px;
+    width: 30%;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+main .twist-section .bottom-wave{
+    bottom: 0;
+    width: 100%;
+    min-width: auto;
+    max-width: 100%;
+}
+
+
+main .product-2 {
+    width: 100%;
+    padding : 100px 50px;
+}
+main .product-2 img{
+    width: 100%;
+    min-width: 200px;
+    min-height: 100px;
+    aspect-ratio: 3/2;
+    object-fit: contain;
+}
+main .product-2 .product-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+main .product-2 .product-top{
+    width: 100%;
+    min-height: 200px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    align-self: flex-end;
+}
+main .product-2 .product-bottom {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    padding-top: 10px;
+    min-height: 60px;
+}
+main .product-2 h4{
+    margin: 0;
+}
+
+
+main .recipes-section{
+    width: 100%;
+    padding: 50px 20px;
+}
+main .recipes-section img{
+    width: 100%;
+    border-radius: 8px;
+}
+main .recipes-section .recipes > div{
+    overflow: hidden;
+    display: flex;
+    align-items: end;
+}
+main .recipes-section .recipes h3{
+    margin-top: 10px;
+    font-weight: 600;
+}
+.recipes-section button{
+    padding: 15px 30px;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-weight: 500;
+    font-size: 15px;
+    background-color: #0058C9;
+    transition-property: background-color;
+    transition-duration: .3s;
+    cursor: pointer;
+
+}
+.recipes-section button:hover{
+    background-color: #6BBCE5;
+    color: black;
+}
+
+
+main .discover-section{
+    width: 100vw;
+    background: url(/assets/Images/Discover\ more\ bg.avif),linear-gradient(112.1deg, rgb(32, 38, 57) -8.6%, rgb(63, 76, 119) -0.8%);
+    background-blend-mode: multiply;
+    background-size: cover;  
+    background-position: center; 
+    color: white;
+    text-align: center;
+    padding: 100px 10px;
+    max-width: 1300px;
+}
+.discover-section button{
+    font-size: 1rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    padding: 13px 30px;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    background-color: #0058C9;
+    cursor: pointer;
+    transition-duration: .3s;
+    transition-property: background;
+}
+.discover-section button:hover{
+    background-color: #6BBCE5;
+    color: black;
+}
+
+
+
+
+/* todo footer section  */
+
+footer {
+    margin: 0;
+    width: 100vw;
+    min-height: 100dvh;
+    background-color: #0058C9;
+    color: white;
+    overflow-x: hidden;
+}
+footer .footer-head img{
+    width : 200px;
+}
+footer .footer-content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 50px ;
+    padding-bottom: 20px;
+}
+/* footer .footer-content > div {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+} */
+footer .footer-head h1{
+    margin-top: -20px;
+}
+footer .footer-content .social-media img {
+    width: 200px;
+}
+footer .footer-content a ,.bottom-section a {
+    color: white;
+    text-decoration: none;
+}
+footer .footer-content .links {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+footer .footer-content .subscribe-area{
+    margin-top: 20px;
+    gap: 15px;
+}
+footer .footer-content .subscribe-area .input-box{
+    width: 300px;
+    max-width: 100%;
+    background-color: white;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    padding: 1px;
+    border-radius: 5px;
+}
+footer .footer-content .subscribe-area input{
+    width: 190px;
+    min-width: 100px;
+    border: none;
+    padding-left: 14px;
+    font-size: 17px;
+    outline: none;
+}
+footer .footer-content .subscribe-area button{
+    background-color: #0058C9;
+    color: white;
+    border: none;
+    flex: 1;
+    height: 100%;
+    border-radius: 5px;
+    padding: 0 5px;
+}
+
+footer .bottom-section {
+    width: 100%;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+}
+footer .bottom-section .links a:not(:last-child){
+    padding-right: 10px;
+    position: relative;
+}
+footer .bottom-section .links a:not(:first-child){
+    padding-left: 10px;
+}
+
+
+
+/* todo footer section ends */
+
+@media screen and (min-width : 992px) {
+    .logo-section .cookie-logo {
+        width: 70px;
+    }
+    .logo-section .oreo-id-logo{
+        position: static;
+        transform: none;
+    }
+    header{
+        padding: 0;
+    }
+    .logo-section .cookie-logo{
+        position: static;
+        transform: none;
+    }
+    header .bottom-header{
+        border-top: 1px solid rgba(0, 0, 0, .2);
+    }
+    main .twist-section .top-left-cookie{
+        top: -10%;
+        left: 5%;
+    }
+    main .twist-section .top-right-cookie{
+        right: 10%;
+    }
+
+    footer .footer-head img{
+        width: 320px;
+    }
+    footer .footer-content .subscribe-area h2 {
+        font-size: 1.3rem;
+    }
+    
+    
+}
+@media screen and (min-width : 576px) {
+    header .nav-wrapper {
+        justify-content: center;
+    }
+    header .nav-wrapper::-webkit-scrollbar{
+        position: absolute;
+        right: 0;
+    }
+    main .twist-section{
+        height: 900px;
+    }
+  
+
+}

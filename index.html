@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Oreo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style/style.css" />
+    
+  </head>
+  <body>
+    <!-- Main container -->
+    <div class="container-xxl main-wrapper">
+      
+      <!--! header -->
+      <header class="d-flex flex-column justify-content-between">
+        <div
+          class="top-header container-fluid row d-flex position-relative justify-content-between align-items-center"
+        >
+          <!--todo hamburger Menu -->
+
+            <!--? menu btn -->
+            <div class="menu-btn col-2 d-lg-none" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+              <i class="bi bi-list "></i>
+            </div>
+            <!--? menu btn ends -->
+
+            <!--? side bar -->
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+
+                <div class="offcanvas-header">
+                  <button type="button" class="btn-close text-reset " data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+
+                <div class="offcanvas-body">
+
+                  <!--? accordion -->
+                  <div class="accordion accordion-flush" id="accordionExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                          Accordion Item #1
+                        </button>
+                      </h2>
+                      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                          Accordion Item #2
+                        </button>
+                      </h2>
+                      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                          Accordion Item #3
+                        </button>
+                      </h2>
+                      <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!--? accordion ends -->
+
+                </div>
+            </div>
+            <!--? side bar -->
+
+          <!--todo hamburger Menu ends-->
+
+          <!--todo logo section-->
+          <div
+            class="logo-section d-flex justify-content-start align-items-center"
+          >
+            <img
+              src="./assets/Images/cookie-ET6NZIBR.avif"
+              alt=""
+              class="cookie-logo me-3"
+            />
+            <div
+              class="oreo-id-logo d-none d-lg-inline-block text-white fw-semibold px-2 px-xxl-4 py-2 rounded-3"
+            >
+              <p class="d-lg-none d-xl-inline-block me-2">
+                Custom cookies with
+              </p>
+              <img
+                src="./assets/Images/oreoid_logo_white-EOQC4U3S.webp"
+                alt=""
+              />
+            </div>
+          </div>
+          <!--todo logo section ends-->
+
+          <!--todo nav bar -->
+          <nav class="col-6 fw-medium d-none d-lg-flex">
+            <a href="index.html"
+              ><span><i class="bi bi-bag"></i></span>Shop</a
+            >
+            <a href="index.html"
+              ><span><i class="bi bi-gift"></i></span>Gifting</a
+            >
+            <a href="index.html"
+              ><span><i class="bi bi-buildings"></i></span>Business</a
+            >
+            <a href="index.html"
+              ><span><i class="bi bi-cake2"></i></span>Recipes</a
+            >
+            <a href="index.html"
+              ><span><i class="bi bi-journal-bookmark"></i></span>About us</a
+            >
+          </nav>
+          <!--todo nav bar ends-->
+
+          <!--todo user section -->
+          <div class="user-area text-dark col-2">
+            <span><i class="bi bi-search"></i></span>
+            <span><i class="bi bi-person"></i></span>
+            <span><i class="bi bi-bag"></i></span>
+          </div>
+          <!--todo user section ends-->
+        </div>
+
+        <div class="bottom-header mt-2">
+          <div
+            class="oreo-id-logo d-lg-none text-white fw-semibold px-2 px-xxl-4 py-2 rounded-3"
+          >
+            <p class="d-xl-inline-block me-2">Custom cookies with</p>
+            <img src="./assets/Images/oreoid_logo_white-EOQC4U3S.webp" alt="" />
+          </div>
+
+          <!--todo bottom nav -->
+          <div class="nav-wrapper fw-medium">
+            <nav class="bottom-nav mt-2">
+              <a href="index.html">Oreo Sour Patch Kids</a>
+              <a href="index.html">New Arrivals</a>
+              <a href="index.html">Celebrations</a>
+              <a href="index.html">Classics</a>
+              <a href="index.html">Merch</a>
+              <a href="index.html">Shop All</a>
+            </nav>
+          </div>
+        </div>
+      </header>
+      <!--! header ends -->
+
+      <!--! Main section -->
+      <main>
+        <!--todo banner section -->
+        <section
+          class="banner container-fluid d-flex justify-content-center align-items-center py-2 py-lg-4"
+        >
+          <img src="./assets/Images/homepage_banner_IF_1440x540.jpg" alt="" />
+        </section>
+        <!--todo banner section -->
+
+        <!--todo product section 1 -->
+        <section
+          class="product-1 container-fluid row row-cols-1 row-cols-sm-2 row-cols-lg-5 g-5 py-5 d-flex justify-content-center"
+        >
+          <div>
+            <img src="/assets/Images/product-1.avif" alt="" />
+            <h3>IF</h3>
+          </div>
+          <div>
+            <img src="/assets/Images/product-2.avif" alt="" />
+            <h3>Star Wars</h3>
+          </div>
+          <div>
+            <img src="/assets/Images/product-3.avif" alt="" />
+            <h3>South Patch Kids</h3>
+          </div>
+          <div>
+            <img src="/assets/Images/product-4.avif" alt="" />
+            <h3>Father's Day</h3>
+          </div>
+          <div>
+            <img src="/assets/Images/product-5.avif" alt="" />
+            <h3>OREOID</h3>
+          </div>
+        </section>
+        <!--todo product section 1 ends -->
+
+        <!--todo feature sectoin -->
+        <section class="feature-section row row-cols-1 row-cols-lg-2 py-5">
+          <!-- ? image section -->
+          <div class="img-section d-flex justify-content-center order-lg-1">
+            <div>
+              <img src="/assets/Images/dad-son.png" alt="" />
+            </div>
+          </div>
+          <!-- ? image section ends -->
+
+          <!-- ? text section -->
+          <div
+            class="text-section d-flex justify-content-center border-1 mt-5 mt-lg-0"
+          >
+            <div
+              class="d-flex flex-column align-items-center align-items-lg-start"
+            >
+              <!-- logo -->
+              <div class="oreoid-logo">
+                <img src="/assets/Images/oreo-id-logo.png" alt="" />
+              </div>
+
+              <!-- text -->
+              <div class="oreoid-text text-center text-lg-start">
+                <h1 class="fw-bolder mt-2">OREO by you</h1>
+                <h3 class="fw-light mt-4">
+                  With OREOID,you can customize your own
+                </h3>
+                <h3 class="fw-light mb-4">OREO cookies,gifts and more.</h3>
+              </div>
+
+              <!-- button -->
+              <div
+                class="oreoid-btn d-flex align-items-center fw-semibold text-white px-4 py-2 rounded-3"
+              >
+                <p class="">Customize Your</p>
+                <img
+                  class=""
+                  src="/assets/Images/cookie-ET6NZIBR.avif"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+          <!-- ? text section ends-->
+        </section>
+        <!--todo feature sectoin ends-->
+
+        <!--todo Twist section -->
+        <section class="twist-section">
+          <div>
+            <h1 class="head fw-bolder display-2">TWIST. LICK. DUNK.</h1>
+            <img
+              src="/assets/Images/cookie-top-left.avif"
+              alt=""
+              class="top-left-cookie rotate-effect"
+            />
+            <img
+              src="/assets/Images/cookie-2-top-right.avif"
+              alt=""
+              class="top-right-cookie rotate-effect"
+            />
+            <img
+              src="/assets/Images/dunk-large-center.webp"
+              alt=""
+              class="center-cookie"
+            />
+            <img
+              src="/assets/Images/cookie-3-bottom-left.avif"
+              alt=""
+              class="bottom-left-cookie rotate-effect"
+            />
+            <img
+              src="/assets/Images/cookie-5-bottom-center.avif"
+              alt=""
+              class="bottom-center-cookie rotate-effect"
+            />
+            <img
+              src="/assets/Images/cookie-4-bottom-right.avif"
+              alt=""
+              class="bottom-right-cookie rotate-effect"
+            />
+          </div>
+
+          <img
+            src="/assets/Images/twist-bottom-wave.webp"
+            alt=""
+            class="bottom-wave"
+          />
+        </section>
+        <!--todo Twist section ends-->
+
+        <!--todo product section 2 -->
+        <section class="product-2 text-center">
+          <h1 class="display-3 fw-semibold">Stuf we're loving</h1>
+          <div
+            class="mt-4 row row-cols-1 row-cols-sm-2 row-cols-lg-3 row-cols-xl-4 gy-sm-5 d-flex justify-content-center"
+          >
+            <div class="product-wrapper">
+              <div class="product-top">
+                <img src="/assets/Images/product-2-1.png" alt="" />
+              </div>
+              <div class="product-bottom">
+                <h4>IF x OREOiD Limited Edition Gift Box</h4>
+              </div>
+            </div>
+
+            <div class="product-wrapper">
+              <div class="product-top">
+                <img src="/assets/Images/product-2-2.png" alt="" />
+              </div>
+              <div class="product-bottom">
+                <h4>OREO SOUR PATCH KIDS Cookies</h4>
+              </div>
+            </div>
+
+            <div class="product-wrapper">
+              <div class="product-top">
+                <img src="/assets/Images/product-2-3.png" alt="" />
+              </div>
+              <div class="product-bottom">
+                <h4>OREO Celebrations Father’s Day Gift Set</h4>
+              </div>
+            </div>
+
+            <div class="product-wrapper">
+              <div class="product-top">
+                <img src="/assets/Images/product-2-4.png" alt="" />
+              </div>
+              <div class="product-bottom">
+                <h4>OREO Chocolate Sandwich Cookies</h4>
+              </div>
+            </div>
+
+            <div class="product-wrapper">
+              <div class="product-top">
+                <img src="/assets/Images/product-2-5.png" alt="" />
+              </div>
+              <div class="product-bottom">
+                <h4>OREO Gluten Free Mint Creme Chocolate Sandwich Cookies</h4>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!--todo product section 2 ends -->
+
+        <!--todo recipes section -->
+        <section class="recipes-section d-flex flex-column align-items-center">
+          <div class="head-text text-center mb-4">
+            <h1 class="fw-bolder">Make it with OREO</h1>
+            <p class="fw-light fs-4">
+              Cakes, cookies, truffles, mikshakes... you name it!
+            </p>
+          </div>
+          <div
+            class="recipes-container row row-cols-1 row-cols-sm-2 row-cols-lg-3 row-cols-xl-4 g-4 text-center d-flex justify-content-center"
+          >
+            <div class="recipes">
+              <div>
+                <img src="/assets/Images/recipes-1.jpg" alt="" />
+              </div>
+              <h3>OREO Crumbles Milk Shake</h3>
+            </div>
+            <div class="recipes">
+              <div>
+                <img src="/assets/Images/recipes-2.jpg" alt="" />
+              </div>
+              <h3>OREO Mint Chocolate Chip Pops</h3>
+            </div>
+            <div class="recipes">
+              <div>
+                <img src="/assets/Images/recipes-3.jpg" alt="" />
+              </div>
+              <h3>OREO Crumbles Cheesecake Squares</h3>
+            </div>
+            <div class="recipes">
+              <div>
+                <img src="/assets/Images/recipes-4.jpg" alt="" />
+              </div>
+              <h3>OREO Mint Raspberry Cookie Balls</h3>
+            </div>
+            <div class="recipes">
+              <div>
+                <img src="/assets/Images/recipes-5.jpg" alt="" />
+              </div>
+              <h3>OREO Raspberry & creme Squares</h3>
+            </div>
+          </div>
+          <button class="mt-4 fw-semibold">See All Recipes</button>
+        </section>
+        <!--todo recipes section ends -->
+
+        <!--todo discover more section -->
+        <section class="discover-section">
+          <h1 class="fw-bolder">
+            Dunk into the world of <br />
+            OREO
+          </h1>
+          <p class="fw-semibold">
+            Learn about our history and discover what OREO is doing <br />
+            today!
+          </p>
+          <button>Discover more</button>
+        </section>
+        <!--todo discover more section -->
+      </main>
+      <!--! Main section ends -->
+    </div>
+
+    <!--! Footer section -->
+    <footer class="px-4 d-flex flex-column align-items-center pb-5">
+      <div class="footer-head d-flex flex-column align-items-center">
+        <img src="./assets/Images/footer-cookie.png" alt="" />
+        <h1 class="text-white fw-bolder display-4">Stay Playful</h1>
+      </div>
+
+      <div class="footer-content row row-cols-1 row-cols-lg-3">
+
+        <div class="social-media d-flex justify-content-center justify-content-lg-start">
+          <div class="py-4">
+            <img src="/assets/Images/oreo-footer.png" alt="" />
+            <div class="social-links text-center text-lg-start mt-3 fs-5">
+              <a href=""><i class="bi bi-facebook me-2"></i></a>
+              <a href=""><i class="bi bi-youtube me-2"></i></a>
+              <a href=""><i class="bi bi-twitter me-2"></i></a>
+              <a href=""><i class="bi bi-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="links fs-6 fw-semibold text-uppercase align-items-center align-items-lg-start text-center">
+           <a href="">about us</a>
+           <a href="">contact us</a>
+           <a href="">faqs</a>
+           <a href="">order status</a>
+           <a href="">orders & returns </a>
+           <a href="">shipping information </a>
+           <a href="">oreo cookies in food service</a>
+           <a href="">promotion terms and conditions</a>
+        </div>
+
+        <div class="subscribe-area mt-5 d-flex flex-column align-items-center align-items-lg-start">
+          <h2 class="m-0 mb-1 fw-bold display-5 text-center text-lg-end">OREO in your inbox</h2>
+          <div class="input-box">
+            <input type="text" placeholder="Enter your email" />
+            <button>Subscribe</button>
+          </div>
+          <div class="text-box text-center text-sm-start fw-lighter">
+            <p>
+              By submitting my email address, I agree to receive marketing
+              communications from Oreo and other Mondelez Brands. I also confirm
+              that I am at least 18 years of age and that I have read and agreed
+              to the privacy policy.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="bottom-section mt-5 py-3 d-flex flex-column flex-lg-row">
+        <p class="fw-lighter">
+          Copyright © Mondelez International 2024. All Rights reserved
+        </p>
+        <div class="links fw-semibold "> <a href="">Terms and conditions</a><a href="">Privacy Policy</a><a href="">Cookie Policy</a><a href="">Accessibilty</a><a href="">Do not sell or share my personal information</a></div>
+      </div>
+    </footer>
+    <!--! Footer section ends -->
+  </body>
+</html>
